@@ -29,7 +29,7 @@ let calculation =()=>{
             <p>${name}</p>
             <p class="cart-item-price">R$${price}</p>
             </h4>
-            <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
+            <i onclick="remover item (${id})" class="bi bi-x-lg"></i>
           </div>
 
         
@@ -49,9 +49,9 @@ let calculation =()=>{
     }else{
       shoppingCart.innerHTML = ''
       label.innerHTML = `
-      <h2> cart is empty </h2>
+      <h2> O carrinho está vazio </h2>
       <a href="index.html">
-      <button class="Home">Back to Home</button>
+      <button class="Home">Voltar pra Home</button>
       </a>
       `
     }
