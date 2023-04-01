@@ -125,7 +125,7 @@ if(basket.length !== 0){
   }).reduce((x,y) => x+y,0 )
   label.innerHTML = `
   <h2> Conta Total : R$ ${amount}</h2>
-  <button class="checkout">Checkout</button>
+  <button onclick="Copiar()" class="checkout">Copiar Pedido</button>
   <button onclick="remove()" class="removeAll">Limpa o Carrinho</button>
   `
 }else return
