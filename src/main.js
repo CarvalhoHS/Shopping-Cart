@@ -1,11 +1,13 @@
 let shop = document.getElementById('shop')
 
 let basket = JSON.parse(localStorage.getItem("data")) || []
+let busca = ""
 
 let gerarshop = () => {
     return (shop.innerHTML= shopItemsData.map((v) => {
         let { id, name, price, desc, img, estoque} = v;
         let search = basket.find((x) => x.id === id) || [];
+        if (name.includes(busca)){
         if(estoque != 0){
         return `
         <div id=product-id-${id} class="item">
@@ -40,11 +42,18 @@ let gerarshop = () => {
         </div>
     </div>
         `    
-    }
+    }}
     }).join(""))
 }
 
 gerarshop();
+
+function search(){
+    let searchitem = document.getElementById('txtBusca')
+    busca = searchitem.value
+    console.log(busca)
+    gerarshop();
+}
 
 let increment = (id) =>{
     let selectedItem = id
