@@ -27,6 +27,35 @@ li img{
     height: 30px;
 }
 
+#divBusca{
+    background-color:#2F4F4F;
+    border:solid 1px;
+    border-radius:15px;
+    width:500px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:427px;
+  }
+  button{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:15px;
+    width:70px;
+    font-weight:bold;
+    background:#5F9EA0;
+  }
+
 .navbar{
 display: flex;
 flex-direction: row;
@@ -50,7 +79,7 @@ margin-bottom: 30px;
 .cartAmount{
     font-size: 16px;
     background-color: red;
-    color: white;
+    color: rgb(255, 255, 255);
     position: absolute;
     top: -10px;
     right: -8px;
@@ -62,7 +91,7 @@ margin-bottom: 30px;
 **/
 .shop{
     display: grid;
-    grid-template-columns: repeat(5, 223px);
+    grid-template-columns: repeat(7, 223px);
     gap: 30px;
     justify-content: center;
     margin-bottom: 20px;
@@ -201,4 +230,3 @@ align-items: center;
   border-radius: 4px;
   padding: 3px 6px;  
 }
-
